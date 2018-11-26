@@ -1,5 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+.imgrow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.imgcolumn {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.imgcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .imgcolumn {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .imgcolumn {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+    
 <head>
 	<title>Kelsie Belan</title>
 	<meta charset="UTF-8">
@@ -63,8 +109,8 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-					<h2 class="section-title">The Georgia Way</h2>
-                    <h3 class="section-subtitle"> App to connect past, present, and future UGA athletes to prepare for a life after athletics</h3>
+					<h2 class="section-title">For Fun</h2>
+                    <h3>Here's a glimpse at just a few of my hobbies...</h3>
 				</div>
 			</div>
 		</div>
@@ -75,50 +121,47 @@
 	<!-- page section start -->
 	<section class="page-section">
 		<div class="container">
-			<div class="row">
-                <div class="col-xl-10 offset-xl-1">
-				        <div style="text-align: center;">
-                            <iframe width="760" height="515" src="https://www.youtube.com/embed/H3EYfXMI70A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="imgrow">
+				<div class="col-lg-12" style="padding-top: 50px;">
+                   <div class="row"> 
+                       <h1 class="methods-title">Golf</h1>
+                       <div class="row">
+                        <div class="imgcolumn">
+                            <img src="img/forfun/golf1.jpg" style="width:100%">
+                            <img src="img/forfun/golf3.jpg" style="width:100%">
                         </div>
-                </div>
-			</div>
-            <h1 class="methods-title">Overview</h1>
-            <div class="row">
-                <div class="col-md-6" style="padding-top: 50px;">
-                    <h3>The Problem</h3>
-                    <p>The UGA Athletic Association (UGAAA) came to the New Media Institute with a request: to make a mobile app for The Georgia Way, which already has a website at <a href="https://www.thegeorgiaway.com">thegeorgiaway.com</a>. As a part of the New Media Institute, my team was tasked with constructing a mobile app that achieves a similar purpose to the website: to connect past, present, and future athletes and prepare them for a life after athletics. The challenge here was to figure out the best way to display the content on a mobile device, since the content on the website was extremely vast. </p>
-				</div>
-                <div class="col-md-6" style="padding-top: 50px;">
-                    <h3>The Solution</h3>
-                    <p>Our team conducted several methods to identify which features should be prioritized to be transferred over to the app. Our team worked around branding and legal barriers with the UGAAA, and was able to program a suitable app that was passed onto the UGAAA team for further engineering.</p>
-				</div>
-            </div>
-            <div class="row">
-                <div class="col-md-6" style="padding-top: 50px;">
-                    <h3>My Roles</h3>
-                    <p></p>
-                    <p>• Lead Programmer</p>
-                    <p>• Programmed the entirety of The Georgia Way app</p>
-                    <p>• Helped design screens for the app</p>
-				</div>
-                <div class="col-md-6" style="padding-top: 50px;">
-                    <h3>Methods Used</h3>
-                    <p></p>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>• Competitive Analysis</p>
-                            <p>• Wireframing</p>
-                            <p>• Focus Group</p>
-                            <p>• Prototyping</p>
+                        <div class="imgcolumn">
+                            <img src="img/forfun/golf4.jpg" style="width:100%">
+                            <img src="img/forfun/golf2.jpg" style="width:100%">
+                        </div>  
+                        <div class="imgcolumn">
+                             <img src="img/forfun/golf5.jpg" style="width:100%">
+                            <img src="img/forfun/golf6.jpg" style="width:100%">
+                        </div>
+                        </div>
+                    </div>
+                     <div class="row"> 
+                       <h1 class="methods-title">Art</h1>
+                       <div class="row">
+                        <div class="imgcolumn">
+                            <img src="img/forfun/art3.jpg" style="width:100%">
+                             <img src="img/forfun/art7.jpg" style="width:100%">
+                        </div>
+                        <div class="imgcolumn">
+                            <img src="img/forfun/art4.jpg" style="width:100%">
+                            <img src="img/forfun/art1.jpg" style="width:100%">
+                            
+                        </div>  
+                        <div class="imgcolumn">
+                             <img src="img/forfun/art5.jpg" style="width:100%">
+                            <img src="img/forfun/art6.jpg" style="width:100%;image-orientation: from-image;">
+                            <img src="img/forfun/art2.jpg" style="width:100%">
+                        </div>
                         </div>
                     </div>
 				</div>
-            </div>
-            <h1 class="methods-title">Design Process</h1>
-    
-            <h3>To be continued...</h3>
-            
-            </div>
+			</div>
+		</div>
 	</section>
 	<!-- page section end -->
 
@@ -146,9 +189,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/mixitup.min.js"></script>
-    <script src="js/circle-progress.min.js"></script>
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
-    <script src="js/circle-progress.min.js"></script>
+    
 </body>
 </html>
+
