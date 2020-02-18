@@ -33,6 +33,10 @@ p {
   line-height: 1.8;
 }
 
+.icon-box-font {
+    color: #f28c93;
+}
+
 img {
   max-width: 100%;
 }
